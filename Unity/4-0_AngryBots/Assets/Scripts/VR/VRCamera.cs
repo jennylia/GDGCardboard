@@ -31,6 +31,8 @@ public class VRCamera : MonoBehaviour
 	private float aspectRatio;
 	public float znear=0.1f;
 	public float zfar=10000.0f;
+
+	private float correctionfactor;
 	
 	private float time_since_last_fullscreen=0;
 	private int is_tablet;
@@ -146,8 +148,9 @@ public class VRCamera : MonoBehaviour
 	}
 	
 	
-	
-	public void UpdateCamera () {
+
+	//public void UpdateCamera () {
+	void Update () {
 		aspectRatio=(Screen.height*2.0f)/Screen.width;
 		setIPDCorrection(IPDCorrection); 
 		

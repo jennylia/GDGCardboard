@@ -1,17 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/IBADataInterface.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Movement/PlayerMoveController.js">
     <Files>
-      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/GameMode.cs" Line="1" Column="1" />
-      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/ParameterBindingNames.cs" Line="1" Column="1" />
-      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/IBADataInterface.cs" Line="1" Column="1" />
-      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/BellaMessages.cs" Line="1" Column="1" />
-      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/PEPDataGenerator.cs" Line="1" Column="1" />
-      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/PEPDataPlugin.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Movement/PlayerMoveController.js" Line="96" Column="46" />
+      <File FileName="Assets/Dive/OpenDiveSensor.cs" Line="164" Column="3" />
+      <File FileName="Assets/Scripts/VR/VRCamera.cs" Line="229" Column="7" />
+      <File FileName="Assets/Scripts/AI/MechAttackMoveController.js" Line="105" Column="8" />
+      <File FileName="Assets/Scripts/Modules/TriggerOnMouseOrJoystick.js" Line="18" Column="2" />
+      <File FileName="Assets/Scripts/Modules/TerminalHack.js" Line="21" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/roberto/Documents/Company Root/GDGCardboard/Unity/4-0_AngryBots/Assets/Dive/OpenDiveSensor.cs" line="228" />
+      <Breakpoint file="/Users/roberto/Documents/Company Root/GDGCardboard/Unity/4-0_AngryBots/Assets/Dive/OpenDiveSensor.cs" line="217" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

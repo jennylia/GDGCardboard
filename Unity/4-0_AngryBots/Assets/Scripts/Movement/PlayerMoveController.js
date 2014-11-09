@@ -18,6 +18,7 @@ public var cursorSmallerWhenClose : float = 1;
 
 // Private memeber data
 private var mainCamera : Camera;
+public var playerCamera : GameObject;
 
 private var cursorObject : Transform;
 private var joystickLeft : Joystick;
@@ -26,7 +27,7 @@ private var joystickRight : Joystick;
 private var mainCameraTransform : Transform;
 private var cameraVelocity : Vector3 = Vector3.zero;
 private var cameraOffset : Vector3 = Vector3.zero;
-private var initOffsetToPlayer : Vector3;
+//private var initOffsetToPlayer : Vector3;
 
 // Prepare a cursor point varibale. This is the mouse position on PC and controlled by the thumbstick on mobiles.
 private var cursorScreenPosition : Vector3;
@@ -44,15 +45,16 @@ function Awake () {
 	motor.facingDirection = Vector2.zero;
 	
 	// Set main camera
-	mainCamera = Camera.main;
-	mainCameraTransform = mainCamera.transform;
+	// Roberto Alcantara Commented Out
+	//mainCamera = Camera.main;
+	//mainCameraTransform = mainCamera.transform;
 	
 	// Ensure we have character set
 	// Default to using the transform this component is on
 	if (!character)
 		character = transform;
 	
-	initOffsetToPlayer = mainCameraTransform.position - character.position;
+//	initOffsetToPlayer = mainCameraTransform.position - character.position;
 	
 	#if UNITY_IPHONE || UNITY_ANDROID || UNITY_WP8 || UNITY_WP_8_1 || UNITY_BLACKBERRY || UNITY_TIZEN
 		if (joystickPrefab) {
@@ -73,13 +75,13 @@ function Awake () {
 	#endif
 	
 	// Save camera offset so we can use it in the first frame
-	cameraOffset = mainCameraTransform.position - character.position;
+//	cameraOffset = mainCameraTransform.position - character.position;
 	
 	// Set the initial cursor position to the center of the screen
-	cursorScreenPosition = Vector3 (0.5 * Screen.width, 0.5 * Screen.height, 0);
+//	cursorScreenPosition = Vector3 (0.5 * Screen.width, 0.5 * Screen.height, 0);
 	
 	// caching movement plane
-	playerMovementPlane = new Plane (character.up, character.position + character.up * cursorPlaneHeight);
+	playerMovementPlane = new Plane (character.up, character.position + character.up);// * cursorPlaneHeight);
 }
 
 function Start () {
@@ -94,6 +96,8 @@ function Start () {
 	screenMovementSpace = Quaternion.Euler (0, mainCameraTransform.eulerAngles.y, 0);
 	screenMovementForward = screenMovementSpace * Vector3.forward;
 	screenMovementRight = screenMovementSpace * Vector3.right;	
+	
+	playerCamera.active = true;
 }
 
 function OnDisable () {
@@ -284,15 +288,15 @@ function Update () {
 	#endif
 		
 	// HANDLE CAMERA POSITION
-		
+	
 	// Set the target position of the camera to point at the focus point
-	var cameraTargetPosition : Vector3 = character.position + initOffsetToPlayer + cameraAdjustmentVector * cameraPreview;
+//	var cameraTargetPosition : Vector3 = character.position + initOffsetToPlayer + cameraAdjustmentVector * cameraPreview;
 	
 	// Apply some smoothing to the camera movement
-	mainCameraTransform.position = Vector3.SmoothDamp (mainCameraTransform.position, cameraTargetPosition, cameraVelocity, cameraSmoothing);
+//	mainCameraTransform.position = Vector3.SmoothDamp (mainCameraTransform.position, cameraTargetPosition, cameraVelocity, cameraSmoothing);
 	
 	// Save camera offset so we can use it in the next frame
-	cameraOffset = mainCameraTransform.position - character.position;
+//	cameraOffset = mainCameraTransform.position - character.position;
 }
 
 public static function PlaneRayIntersection (plane : Plane, ray : Ray) : Vector3 {
