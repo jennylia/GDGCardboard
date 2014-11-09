@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/IBADataInterface.cs">
+    <Files>
+      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/GameMode.cs" Line="1" Column="1" />
+      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/ParameterBindingNames.cs" Line="1" Column="1" />
+      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/IBADataInterface.cs" Line="1" Column="1" />
+      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/BellaMessages.cs" Line="1" Column="1" />
+      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/PEPDataGenerator.cs" Line="1" Column="1" />
+      <File FileName="../../../JLian/Documents/UnityProjects/Bella/Sample/Assets/Bella/Scripts/PEPDataPlugin.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
